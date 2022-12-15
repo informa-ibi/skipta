@@ -12,7 +12,7 @@ currentBuild.result = 'SUCCESS'
 pipeline {
   agent { label 'master' }
   parameters {
-    gitParameter(name: 'BRANCH_NAME', type: 'PT_BRANCH', defaultValue: 'master', selectedValue: 'DEFAULT', branchFilter: 'origin/(.*)', quickFilterEnabled: 'true', sortMode: 'ASCENDING_SMART', description: 'Source git branch name')
+    gitParameter(name: 'BRANCH_NAME', type: 'PT_BRANCH', defaultValue: 'main', selectedValue: 'DEFAULT', branchFilter: '(.*)', quickFilterEnabled: 'true', sortMode: 'ASCENDING_SMART', description: 'Source git branch name')
     choice(name: 'ENVIRONMENT', choices: ['dev', 'stg', 'prod'], description: 'Application deployment environment')
     booleanParam(name: 'DO_DEPLOY', defaultValue: true, description: 'Run deploy on selected environment after successful build')
   }
