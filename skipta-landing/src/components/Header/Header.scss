@@ -1,0 +1,27 @@
+
+nav {
+    background-color: #14123B;
+    padding: 20px 0 !important;
+    .nav-link {
+        color: #fff;
+    }
+    .nav-link:hover {
+        color: rgb(71, 98, 219);
+    }
+    .navbar-nav .nav-link.active {
+        color: rgb(71, 98, 219);
+    }
+    button {
+        background-color: #fff;
+    }
+    
+    .skipta-logo {
+        width: 40%;
+        float: left;
+    }
+    
+    .navbar-collapse {
+        flex-grow: 0 !important;
+    }
+
+}

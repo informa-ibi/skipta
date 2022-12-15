@@ -1,0 +1,15 @@
+.status-count-container {
+    display: flex;
+    justify-content: space-evenly;
+    .status-count-wrap {
+        h1 {
+            font-size: 75px;
+        }
+        p {
+            font-size: 19px;
+            padding: 0 50px;
+            color: #747E80;
+        }
+    }
+    
+}
