@@ -31,7 +31,7 @@ pipeline {
     stage('Get WebSite from release image') {
       steps {
         sh 'docker run -t -d --rm --name skipta-build skipta-build:latest'
-        sh 'docker cp skipta-build:/app/dist `pwd`/dist/'
+        sh 'docker cp skipta-build:/app/build `pwd`/build/'
         sh 'docker stop skipta-build'
       }
     }
@@ -45,7 +45,7 @@ pipeline {
       }
       steps {
         sh '''
-          aws s3 --region us-east-1 sync --exact-timestamps --delete --acl bucket-owner-full-control dist/ s3://${REPOBUCKET}/ || exit 1
+          aws s3 --region us-east-1 sync --exact-timestamps --delete --acl bucket-owner-full-control build/ s3://${REPOBUCKET}/ || exit 1
           aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION} --paths "/*" || exit 1
         '''
       }
