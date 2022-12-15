@@ -25,7 +25,7 @@ pipeline {
   stages {
     stage('Build image') {
       steps {
-        sh 'docker build --tag skipta-build:latest --build-arg ENVIRONMENT=${ENVIRONMENT} -f ./Dockerfile ./'
+        sh 'docker build --tag skipta-build:latest --build-arg ENVIRONMENT=${ENVIRONMENT} -f ./skipta-landing/Dockerfile ./skipta-landing'
       }
     }
     stage('Get WebSite from release image') {
