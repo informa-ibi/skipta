@@ -1,6 +1,6 @@
 FROM node:14.17.1 as base
-ARG ENVIRONMENT=stg
+ARG ENVIRONMENT=prod
 ADD . /app
 WORKDIR /app
 RUN npm i && \
-    npm run build-$ENVIRONMENT
+    npm run build
