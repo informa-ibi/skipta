@@ -11,7 +11,8 @@ function App() {
       < banner.TopBanner />
       < layout.StatusCount />
       < layout.Collaboration />
-
+      < layout.Community />
+      < layout.Testimonial />
     </div>
   );
 }

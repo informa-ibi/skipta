@@ -8,12 +8,12 @@ import collaborationImg from '../../../assets/images/collaboration-comp.png';
 
 function Collaboration() {
 return (
-    <div className='collaboration-container'>
+    <div className='collaboration-container padding__tb--50'>
         <Row>
         <Col>
             <img className='collaboration-img' src={collaborationImg} alt="collaboration" />
         </Col>
-        <Col>
+        <Col className='collaboration-acc'>
             <h1>Peer-to-Peer Collaboration</h1>
             <p>
             Skipta is comprised of many tools that allows registered medical professioonals to consult, communite, and exchange information in a private secure platform.     

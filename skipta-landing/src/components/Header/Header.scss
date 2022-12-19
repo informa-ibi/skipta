@@ -1,7 +1,6 @@
 
 nav {
     background-color: #14123B;
-    padding: 20px 0 !important;
     .nav-link {
         color: #fff;
     }
@@ -16,8 +15,11 @@ nav {
     }
     
     .skipta-logo {
-        width: 40%;
-        float: left;
+        width: 400px;
+        img {
+        width: 50%;
+        float: left;    
+        }
     }
     
     .navbar-collapse {

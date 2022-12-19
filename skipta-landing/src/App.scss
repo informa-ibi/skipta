@@ -63,6 +63,25 @@
   padding-bottom: 50px;
 }
 
+.padding__tb--60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.padding__tb--70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .container {
   width: 1150px !important;
+}
+
+button {
+  border: none;
+  background-color: #B84500;
+  color: #fff;
+  padding: 10px 70px;
+  border-radius: 20px !important;
+  margin-top: 30px;
 }

@@ -2,7 +2,7 @@ import './Header.scss';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../assets/images/skipt-logo__.png';
+import logo from '../../assets/images/logo.png';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +16,9 @@ function Header() {
     <Navbar className='nav-bg' expand="lg">
       <Container>
         <Navbar.Brand className='skipta-logo-wrap' href="#home">
-            <img className='skipta-logo' src={logo} alt="logo" />
+          <div className='skipta-logo'>
+            <img src={logo} alt="logo" />
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
