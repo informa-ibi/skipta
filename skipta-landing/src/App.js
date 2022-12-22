@@ -13,6 +13,8 @@ function App() {
       < layout.Collaboration />
       < layout.Community />
       < layout.Testimonial />
+      < layout.Contact />
+      < layout.CallToAction />
     </div>
   );
 }
